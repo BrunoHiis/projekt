@@ -1,4 +1,14 @@
-{
-  "name": "Logitech G502",
-  "price": 79.99
-}
+[
+  {
+    "name": "Logitech G502",
+    "price": 79.99
+  },
+  {
+    "name": "Logitech G501",
+    "price": 49.99
+  },
+  {
+    "name": "Logitech G500",
+    "price": 69.99
+  }
+]
