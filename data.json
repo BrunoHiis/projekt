@@ -1,14 +1,24 @@
 [
   {
-    "name": "Logitech G502",
-    "price": 79.99
+    "name": "Hiir 1",
+    "comments": "See on esimene hiir",
+    "price": 79.99,
+    "photo": "https://img.freepik.com/free-photo/cute-gerbil-fat-tail-crawls-red-flower-garbil-fat-tail-flower_488145-2468.jpg?w=2000",
+    "link": "https://instagram.com",
+    "favFoods": ["tuna", "catnip", "celery"]
   },
   {
-    "name": "Logitech G501",
-    "price": 49.99
+    "name": "Hiir 2",
+    "comments": "See on 2. hiir",
+    "price": 69.99,
+    "photo": "https://i.ytimg.com/vi/ZagtRfC5cAw/maxresdefault.jpg",
+    "link": "https://facebook.com"
   },
   {
-    "name": "Logitech G500",
-    "price": 69.69
+    "name": "Hiir 3",
+    "comments": "See on 3. hiir",
+    "price": 49.99,
+    "photo": "https://qph.cf2.quoracdn.net/main-qimg-b0775b6713e6b02879543cc3ed9bbe21.webp",
+    "link": "https://youtube.com"
   }
 ]
