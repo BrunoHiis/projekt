@@ -1,9 +1,101 @@
+:root {
+  --primary: #07b9fb;
+  --background: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
+  margin: 0;
   color: #fff;
   scroll-behavior: smooth;
-  background: #0f172a;
+  background: var(--background);
   font-family: "Inter", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell,
     Helvetica Neue;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  width: auto;
+  display: inline-flex;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  align-items: center;
+}
+
+button:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 0.3s;
+  background-color: #066e94;
+}
+
+button svg {
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(
+    to bottom,
+    #000,
+    var(--background)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #000,
+    var(--background)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-wrapper {
+  max-width: 1300px;
+  padding: 16px;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+.navbar-wrapper a {
+  margin-left: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.center-content {
+  display: flex;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
