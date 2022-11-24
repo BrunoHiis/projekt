@@ -7,11 +7,52 @@
     <title>Cart</title>
     <!-- Import CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
   </head>
   <body>
-    <h1>Cart page</h1>
-    <p>My first paragraph.</p>
+    <nav-bar></nav-bar>
+    <div class="row">
+      <div class="column">
+        <table id="cartTable">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Price</td>
+            </tr>
+          </thead>
+          <tbody id="cartTableBody">
+    
+          </tbody>
+        </table>
+      </div>
+      <div class="column">
+        <table id="orderSummary">
+          <thead>
+            <tr>
+              <td colspan="2">Order Summary</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Subtotal</td>
+              <td id="subtotal"></td>
+            </tr>
+            <tr>
+              <td>Shipping estimate</td>
+              <td id="shippingEstimate"></td>
+            </tr>
+            <tr>
+              <td>Order total</td>
+              <td id="orderTotal"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button style="width: 100px;">Checkout</button>
+      </div>
+    </div>
     <!-- Import JS -->
     <script src="./js/main.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <script src="./components/navbar.js"></script>
   </body>
 </html>

@@ -1,0 +1,45 @@
+#cartTable {
+  border-collapse: collapse;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+#cartTable td{
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#orderSummary {
+  margin-left: 30%;
+  max-width: 400px;
+}
+
+#orderSummary td{
+  border-bottom: 1px dashed #ddd;
+  padding: 10px;
+}
+
+
+button {
+  align-content: center;
+  margin: 15px;
+  align-self: center;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
