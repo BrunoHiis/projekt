@@ -1,3 +1,5 @@
+//Raido Aunpuu
+
 localStorage.setItem("cart",JSON.stringify([
   {
     "name": "Logitech G502  sdf ds sfsd fsd ",
@@ -15,13 +17,20 @@ localStorage.setItem("cart",JSON.stringify([
 )
 
 function removeProductFromCart(event){
+  //event.target on nupp, millel vajutati
   let id = event.target.parentElement.rowIndex - 1
 
   let cartJson = JSON.parse(localStorage.getItem("cart"))
+
+  //Eemalda indexi kaudu vastav element
   cartJson.splice(id,1)
+
   localStorage.setItem("cart",JSON.stringify(cartJson))
 
+  //Eemalda kogu rea element
   event.target.parentElement.remove()
+
+  //Tuleb uuesti arvutada ostukorvi kokkuvõte
   createSummary()
 }
 
@@ -29,6 +38,7 @@ function createCartTable(){
   let cartJson = JSON.parse(localStorage.getItem("cart")) 
   cartTableBody = document.querySelector("#cartTableBody")
 
+  //Iga toote kohta tehakse rida html tbody elementi
   for (let index = 0; index < cartJson.length; index++) {
     const cartRow = cartJson[index];
   
@@ -50,6 +60,7 @@ function createCartTable(){
   }
 }
 
+
 function createSummary(){
   let cartJson = JSON.parse(localStorage.getItem("cart"))
   let cartPriceSum = 0
@@ -58,6 +69,7 @@ function createSummary(){
     cartPriceSum += cartRow["price"]
   }
 
+  //lisa uued väärtused ka html elementidele
   document.getElementById("subtotal").textContent = cartPriceSum + " €"
   document.getElementById("shippingEstimate").textContent = 5 + " €"
   document.getElementById("orderTotal").textContent = cartPriceSum + 5 + " €"
