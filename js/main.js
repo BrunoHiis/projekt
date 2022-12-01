@@ -9,14 +9,16 @@ function hiirTemplate(hiir) {
     <div class="product">
         <img class="hiir-photo" src="${hiir.photo}">
         <h2 class="hiir-name">${hiir.name} </h2>
-        <p><strong>Hind:</strong> ${hiir.price}</p>
-        <a href="${hiir.link}" class="button">Lisa ostukorvi</a>
+        <p><strong></strong> ${hiir.price}</p>
+
+        <a href="${hiir.link}" ><button class = "buyButton">Add to cart</button></a>
     </div>
   `;
 }
 
+
 document.getElementById("app").innerHTML = `
-    <h1 class="app-title">Products</h1>
+    
     ${hiirData.map(hiirTemplate).join("")}
 
 `;
