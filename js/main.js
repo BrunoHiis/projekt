@@ -8,9 +8,9 @@ function hiirTemplate(hiir) {
   return `
     <div class="product">
         <img class="hiir-photo" src="${hiir.photo}">
-        <h2 class="hiir-name">${hiir.name} <span class="comments">(${hiir.comments})</span></h2>
+        <h2 class="hiir-name">${hiir.name} </h2>
         <p><strong>Hind:</strong> ${hiir.price}</p>
-        <a href="${hiir.link}" class="button">Rohkem infot</a>
+        <a href="${hiir.link}" class="button">Lisa ostukorvi</a>
     </div>
   `;
 }
