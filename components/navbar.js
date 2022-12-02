@@ -19,9 +19,7 @@ class navbar extends HTMLElement {
     this.innerHTML = templateContent
   }
 
-  connectedCallback() {
-    console.log("connected")
-  }
+  connectedCallback() {}
 
   disconnectedCallback() {}
 }

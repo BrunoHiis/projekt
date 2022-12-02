@@ -1,21 +1,5 @@
 //Raido Aunpuu
 
-localStorage.setItem("cart",JSON.stringify([
-  {
-    "name": "Logitech G502  sdf ds sfsd fsd ",
-    "price": 79.99
-  },
-  {
-    "name": "Logitech G501",
-    "price": 49.99
-  },
-  {
-    "name": "Logitech G500",
-    "price": 69.69
-  }
-])
-)
-
 function removeProductFromCart(event){
   //event.target on nupp, millel vajutati
   let id = event.target.parentElement.rowIndex - 1
@@ -68,7 +52,7 @@ function createSummary(){
     const cartRow = cartJson[index];
     cartPriceSum += cartRow["price"]
   }
-
+  cartPriceSum = Math.round(cartPriceSum*10)/10
   //lisa uued väärtused ka html elementidele
   document.getElementById("subtotal").textContent = cartPriceSum + " €"
   document.getElementById("shippingEstimate").textContent = 5 + " €"
