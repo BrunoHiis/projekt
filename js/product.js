@@ -19,7 +19,7 @@ document.getElementById("app").innerHTML = `
 `;
 
 
-
+// Raido Aunpuu, lisab nuppudele onClick, et asju ostukorvi lisada
 document.getElementById("app").querySelectorAll(".buyButton").forEach((btn)=>{
   btn.onclick = (event)=>{
     let productName = event.target.parentElement.querySelector('.hiir-name').innerText
@@ -28,6 +28,7 @@ document.getElementById("app").querySelectorAll(".buyButton").forEach((btn)=>{
       if (product.name === productName){
         index = hiirData.length
         let cartJson = JSON.parse(localStorage.getItem("cart"))
+        //kui localstorage on tühi
         if (cartJson === null){
           cartJson = []
         }
