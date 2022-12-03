@@ -76,7 +76,6 @@ img {
 .buyButton{
   cursor: pointer;
   border: none;
-  background: var(--primary);
   color: white;
   font-weight: 700;
   width: auto;
@@ -88,3 +87,9 @@ img {
   align-items: center;
 }
 
+.buyButton:active {
+  background-color: #088fc1;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+
+}

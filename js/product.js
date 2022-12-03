@@ -1,7 +1,7 @@
 import hiirData from '../data.json' assert {type: 'json'};
 
-
-function hiirTemplate(hiir) {
+//Kaarel Tamuri - Returnib div-i, kus on andmed data.json failist
+function hiirTemplate(hiir) { 
   return `
     <div class="product">
         <img class="hiir-photo" src="${hiir.photo}">
@@ -13,6 +13,7 @@ function hiirTemplate(hiir) {
   `;
 }
 
+//Kaarel Tamuri - käib kõik objektid hiirData arrays läbi ning rakendab iga ühe jaoks hiirData funktsiooni, joinib need kokku ning lisab id="app" kohale products.html failis
 document.getElementById("app").innerHTML = `
     ${hiirData.map(hiirTemplate).join("")}
     
