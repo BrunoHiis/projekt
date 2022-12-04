@@ -1,4 +1,25 @@
-import hiirData from "../data.json" assert { type: "json" }
+const hiirData = [
+  {
+    name: "Logitech G502 Proteus Spectrum",
+    comments: "",
+    price: 79.99,
+    photo:
+      "https://hnsgsfp.imgix.net/9/images/detailed/47/Logitech_G502_Lightspeed_Wireless_Gaming_Mouse_(Main).jpg?fit=fill&bg=0FFF&w=1536&h=900&auto=format,compress",
+  },
+  {
+    name: "Logitech G502 Hero",
+    comments: "",
+    price: 69.99,
+    photo:
+      "https://cdn.pocket-lint.com/r/s/x1920/assets/images/162681-gadgets-review-logitech-g502-x-plus-review-image10-q4a5lrtabj.jpg",
+  },
+  {
+    name: "Logitech G502 Lightspeed",
+    comments: "",
+    price: 49.99,
+    photo: "https://cdn.mos.cms.futurecdn.net/YNrggwxZZnREEyxtjJDieV.jpg",
+  },
+]
 
 //Kaarel Tamuri - Returnib div-i, kus on andmed data.json failist
 function hiirTemplate(hiir) {
